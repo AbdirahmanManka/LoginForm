@@ -8,9 +8,7 @@ import { Carousel } from 'antd';
 
   
 function Login() {
-    function onChange(a, b, c) {
-        console.log(a, b, c);
-      }
+    
 
     
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Friday } from './Antd/Friday';
+// import { Friday } from './Antd/Friday';
 import Login from './LoginPage/Login';
+import Hi from './Myform/Hi';
 
 
 
@@ -9,8 +10,10 @@ function App() {
     <div className="App">
 
 
-     <Login/>
+     {/* <Login/> */}
 
+
+<Hi/>
    
  
 

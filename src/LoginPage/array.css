@@ -26,7 +26,7 @@ input::focus-within{
     justify-content: center;
     flex-direction: column;
 } */
-#add{
+/* #add{
     background-color: rgb(255, 187, 0);
     color: white;
     float: right;
@@ -50,4 +50,4 @@ input::focus-within{
     margin: 10px;
     margin-left: 500px;
 
-}
+} */
