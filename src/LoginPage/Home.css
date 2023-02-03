@@ -1,0 +1,30 @@
+
+
+.btn1{
+    background-color: red;
+    color: white;
+    float: right;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    margin-left: 500px;
+}
+h2{
+    font-size: 30px;
+    align-items: center;
+    color: darkblue;
+    justify-content: center;
+    float: centre;
+}
+#Home{
+    
+}
+#Home input{
+    background-color: cornsilk;
+    border: 3px solid black;
+    color:tomato;
+
+}
