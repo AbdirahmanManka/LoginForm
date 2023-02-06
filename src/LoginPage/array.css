@@ -20,6 +20,24 @@ input:focus{
 input::focus-within{
     border: 2px solid aqua;
 }
+#add{
+    background-color: rgb(255, 187, 0);
+    color: white;
+    float: right;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    margin-left: 500px;
+}
+#remove{
+    background-color: crimson;
+    padding: 10px;
+    width: 60px;
+    color: aliceblue;
+}
 /* .one{
     display: flex;
     align-items: center;

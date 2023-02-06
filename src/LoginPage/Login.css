@@ -5,30 +5,136 @@ background: linear-gradient(90deg, rgba(3,4,3,1) 1%, rgba(231,44,11,0.0648853291
 .yow{
     background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 200px;
+    margin-right: 300px;
+    border: 2px solid black;
     margin-top: 100px;
     border-radius: 10px;
+    width: 400px;
     height: 400px;
+    padding: 10px;
 }
-button{
+.btn{
     background-color: #AF435B;
     color: white;
     
     border-radius: 10px;
-    border: 1px solid #ffffff;
+    border: 2px solid black;
     margin-bottom: 100px;
     padding: 10px;
     width: 100px;
-    margin: 10px;
-    margin-left: 40px;
+    margin: 20px;
+    margin-left: 110px;
 }
 label{
     color: #AF435B;
     font-size: 20px;
     font-weight: 500;
+    margin-left: 70px;
     font-family: 'Times New Roman', Times, serif;
     
 
 
 }
+.in1 input{
+    margin-left: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+.in2 input{
+    margin-left: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+.carousel-wrapper {
+    height: 400px;
+    position: absolute;
+    display: block;
+    border: 2px solid black;
+    margin-left: 170px;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+  }
+  
+.carousel-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+
+
+
+
+}
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+
+}
+.arrow-prev{
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next{
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+[id^="item"]{
+    display: none;
+
+}
+.item-1{
+    z-index: 2;
+    opacity: 1;
+    border-radius: 10px;
+    background: url("https://images.pexels.com/photos/450597/pexels-photo-450597.jpeg?auto=compress&cs=tinysrgb&w=800");
+    background-size: cover;
+}
+.item-2{
+    background: url("https://images.pexels.com/photos/792832/pexels-photo-792832.jpeg?auto=compress&cs=tinysrgb&w=800");
+    background-size: cover;
+    border-radius: 10px;
+
+
+}
+.item-3{
+    background: url("https://images.pexels.com/photos/12677436/pexels-photo-12677436.png?auto=compress&cs=tinysrgb&w=800&lazy=load");
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+*:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  @media (max-width: 800px) {
+    .responsive-div {
+      width: 100%;
+    }
+  }
